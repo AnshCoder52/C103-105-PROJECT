@@ -1,0 +1,43 @@
+<html>
+<head>
+        <script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js" target="_blank"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+<title>ImageRecogProject</title>
+<link rel="stylesheet" href="style.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+    <center>
+        <h2 class="btn btn-primary"> Image Recognition WebApp </h2>
+        <br>
+    <h3> Model is trained only to identify the following objects </h3>
+    <br>
+<h4> Xbox Controller | DVD | Spiderman | Mousebox | Bayblade | Headphones | Laser Gun | Pencil Holder </h4>
+<br>
+<label> Webcam View </label>
+<br>
+<div id="camera"></div>
+<br>
+<div id="objectp"></div>
+<br>
+<button class="btn btn-warning" id="getimgbtn" onclick="getimg()">Get Image</button>
+<br>    
+<button class="btn btn-info" id="imagecapt" onclick="check()">Identify Image</button>
+<br>
+<h3>Object Is... <span id="objname"></span> </h3>
+<br>
+<h3>Accuracy <span id="objacc"></span> </h3>
+</center>
+    <script src="main.js"></script>
+
+</body>
+</html>
